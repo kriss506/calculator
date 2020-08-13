@@ -139,11 +139,12 @@ function buttonClicked(event) {
             else {
                 // Clicking an operator signals the start of a new term
                 termQueue.push(termString);
+                display.innerHTML = termString;
                 termString = "";
                 console.table(termQueue);
                 equationString += myOperator;
                 console.log(equationString);
-                secondaryDisplay.innerHTML = equationString; display.innerHTML = termString
+                secondaryDisplay.innerHTML = equationString;
             }
     }
 
