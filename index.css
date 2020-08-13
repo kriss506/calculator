@@ -35,10 +35,20 @@
 .cancel {
   grid-column-start: 1;
   grid-column-end: 3;
+  padding-top: 14px;
 }
 .zero {
   grid-column-start: 1;
   grid-column-end: 3;
+}
+.minus {
+  padding-top: 14px;
+}
+.multiply {
+  padding-top: 24px;
+}
+.divide {
+  padding-top: 16px;
 }
 .decimal {
   grid-column-start: 3;
@@ -58,6 +68,7 @@
 .backSpace {
   grid-column-start: 3;
   grid-column-end: 5;
+  padding-top: 8px;
 }
 .secondaryDisplay {
   font-size: 24px;
