@@ -1,6 +1,8 @@
-Simple Calculator
+# Simple Calculator
 
-Kriss Wilson 13/08/2020
+### Kriss Wilson
+
+#### 13/08/2020
 
 This simple calculator allows the user to enter
 a string of calculations eg 1+2+3\*4/5
