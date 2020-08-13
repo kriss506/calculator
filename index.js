@@ -71,10 +71,12 @@ function buttonClicked(event) {
         let n = String(termString).length;
         termString = String(termString);
 
+        // Remove the last character from the term string
         if (n > 0) {
             termString = termString.substring(0, termString.length - 1);
 
         }
+        // Remove the last character from the equation string
         n = String(equationString).length;
         equationString = String(equationString);
 
@@ -87,23 +89,25 @@ function buttonClicked(event) {
 
     // If a digit button was clicked
 
-    if (DIGITS.includes(Number(event.target.innerHTML)) || event.target.innerHTML == '.') {
+    if (DIGITS.includes(Number(event.target.innerHTML)) || event.target.innerHTML == '.')
+    // First check if 0..9 or a decimal point 
+    {
 
         if (buttonQueue[1] == "=") { equationString = ""; termString = ""; }
+        // If the answer is being displayed, and another digit is clicked, reset the calculator strings
 
-        let lastCharacterOfEquation = equationString.charAt(equationString.length - 1);
+        //let lastCharacterOfEquation = equationString.charAt(equationString.length - 1);
 
         if (event.target.innerHTML == '.' && equationString.length == 0) {
             equationString = "0";
         }
+        // Insert a zero before decimal points if the first char of the equation string is a decimal point
 
         if (termString.includes(".") && event.target.innerHTML == '.') {
-
+            // If the term string already includes a decimal point, don't add another one.
         }
-
-
-
         else {
+            //add the digit or decimal point to the equation and term strings
             console.log("a digit was entered");
             console.log(event.target.innerHTML);
             termString += event.target.innerHTML;
@@ -122,15 +126,18 @@ function buttonClicked(event) {
         console.log("an operator was entered");
         console.log(event.target.innerHTML);
         let myOperator = event.target.innerHTML;
+        // The operator type is represented by the button's innerHTML
 
         let lastCharacterOfEquation = equationString.charAt(equationString.length - 1);
+
         if (OPERATORS.includes(lastCharacterOfEquation)) {
-            alert("attempt to insert two operators in succession");
+            console.log("attempting to insert two operators in succession");
         } else
             if ((myOperator == '*' || myOperator == '/') && equationString.length == 0) {
-                alert("* or / at beginning of equation string");
+                console.log(" attempting to insert * or / at beginning of equation string");
             }
             else {
+                // Clicking an operator signals the start of a new term
                 termQueue.push(termString);
                 termString = "";
                 console.table(termQueue);
@@ -147,6 +154,7 @@ function buttonClicked(event) {
         // console.log(eval(equationString));
         secondaryDisplay.innerHTML = equationString + "=";
         let answer = eval(equationString);
+        // Let eval provide the answer to perform order of operations correctly
         console.log(answer);
         display.innerHTML = answer;
         equationString = String(answer);
