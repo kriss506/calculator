@@ -4,6 +4,8 @@
 
 #### 13/08/2020
 
+https://kriss506.github.io/calculator/
+
 This simple calculator allows the user to enter
 a string of calculations eg 1+2+3\*4/5
 
