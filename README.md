@@ -12,10 +12,10 @@ a string of calculations eg 1+2+3\*4/5
 It does not handle a percent key.
 
 The top display shows the equation string.
-The next display shows the current term and also the answer after the equals key is pressed.
+The next display shows the current term and the answer after the equals key is pressed.
 
 The calculator makes use of the javascript eval function to perform
-the calculation to ensure the correctorder of operations rules are
+the calculation to ensure the correct order of operations rules are
 applied. eg multiplication and division before addition and subtraction
 (brackets buttons are not provided).
 
