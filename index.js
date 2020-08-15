@@ -28,7 +28,7 @@ let secondaryDisplay = document.querySelector(".secondaryDisplay");
 let termQueue = [];
 // The termQueue stores the terms of the equation
 let buttonQueue = [];
-// The button innerHTML is added to the beginning of the buttonQueue.
+// The button innerHTML will be added to the beginning of the buttonQueue.
 // The buttonQueue can be used to check the last button pressed etc
 
 let termString = "";
