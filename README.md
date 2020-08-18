@@ -6,6 +6,8 @@
 
 https://kriss506.github.io/calculator/
 
+Tests: Please go to https://github.com/kriss506/calculatorTests
+
 This simple calculator allows the user to enter
 a string of calculations eg 1+2+3\*4/5
 
