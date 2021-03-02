@@ -4,7 +4,7 @@
 
 #### 13/08/2020
 
-https://kriss506.github.io/calculator/
+Live demonstration: https://kriss506.github.io/calculator/
 
 Tests: Please go to https://github.com/kriss506/calculatorTests
 
